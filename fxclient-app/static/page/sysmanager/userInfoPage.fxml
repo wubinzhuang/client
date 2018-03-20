@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.fxclient.framework.controls.tableview.TablePager?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+<StackPane prefHeight="600.0" prefWidth="800.0" stylesheets="@userInfo.css" xmlns="http://javafx.com/javafx/8"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxclient.sysmanager.page.UserInfoPage">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <ToolBar prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                         AnchorPane.topAnchor="0.0">
+                    <items>
+                        <Button mnemonicParsing="false" onAction="#query" text="查询"/>
+                        <Button mnemonicParsing="false" onAction="#add" text="新增"/>
+                        <Button mnemonicParsing="false" onAction="#modify" text="修改"/>
+                        <Button mnemonicParsing="false" onAction="#delete" text="删除"/>
+                        <Button mnemonicParsing="false" onAction="#active" text="导出"/>
+                    </items>
+                </ToolBar>
+                <GridPane layoutX="28.0" layoutY="47.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                          AnchorPane.topAnchor="47.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.5"/>
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="13"/>
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="20"/>
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="13"/>
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="20"/>
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="13"/>
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="20"/>
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.5"/>
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                    </rowConstraints>
+                    <children>
+                        <Label text="用户名:" GridPane.columnIndex="1" GridPane.halignment="RIGHT"/>
+                        <Label text="用户姓名:" GridPane.columnIndex="5" GridPane.halignment="RIGHT"/>
+                        <Label text="工号:" GridPane.columnIndex="3" GridPane.halignment="RIGHT"/>
+                        <TextField fx:id="txtUserName" GridPane.columnIndex="2"/>
+                        <TextField fx:id="txtUserCode" GridPane.columnIndex="4"/>
+                        <TextField fx:id="txtEmpName" GridPane.columnIndex="6"/>
+                    </children>
+                </GridPane>
+                <TableView fx:id="tvwUserInfo" layoutX="8.0" layoutY="155.0" prefHeight="200.0" prefWidth="297.0"
+                           AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="100.0">
+                    <columns>
+                        <TableColumn prefWidth="75.0" text="用户名">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="userName"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="75.0" text="工号">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="empCode"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="75.0" text="姓名">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="empName"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="75.0" text="性别">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="sex"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="75.0" text="电话">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="tel"/>
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <TablePager fx:id="pageUserInfo" layoutX="8.0" layoutY="155.0" prefHeight="200.0" prefWidth="297.0"
+                            AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                </TablePager>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

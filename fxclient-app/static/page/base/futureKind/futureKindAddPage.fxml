@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="200.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxclient.base.futurekind.FutureKindAddPage">
+    <children>
+        <Label layoutX="28.0" layoutY="39.0" text="交 易 市 场:" />
+        <!--<TextField fx:id="marketName" layoutX="158.0" layoutY="35.0" />-->
+        <ChoiceBox fx:id="marketNameList" layoutX="158.0" layoutY="35.0" prefWidth="150.0" />
+        <Label layoutX="28.0" layoutY="75.0" text="期货品种编码：" />
+        <TextField fx:id="kindCode" layoutX="158.0" layoutY="71.0" />
+        <Label layoutX="28.0" layoutY="110.0" text="期货品种名称：" />
+        <TextField fx:id="kindName" layoutX="158.0" layoutY="106.0" />
+        <Button layoutX="369.0" layoutY="151.0" mnemonicParsing="false" onAction="#saveUserInfo" prefHeight="23.0" prefWidth="89.0" text="保存" />
+        <TextField fx:id="marketId" editable="false" layoutX="308.0" layoutY="35.0" opacity="0.0" />
+        <TextField fx:id="marketName" editable="false" layoutX="308.0" layoutY="35.0" opacity="0.0" />
+        <TextField fx:id="Id" editable="false" layoutX="308.0" layoutY="35.0" opacity="0.0" />
+    </children>
+</AnchorPane>

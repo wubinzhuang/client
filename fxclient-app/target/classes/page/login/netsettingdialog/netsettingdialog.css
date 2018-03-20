@@ -1,0 +1,6 @@
+#btnconfirm {
+    -fx-background-color: #25c4c7;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

@@ -1,0 +1,28 @@
+.login-bg {
+    -fx-background-image: url("../../image/login-bg.png");
+    -fx-font-family: "΢���ź�";
+    -fx-font-size: 16;
+    -fx-font-weight: bold;
+
+}
+
+.button {
+    -fx-background-color: #25c4c7;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.remenberme {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.noboder {
+    -fx-background-color: white;
+
+}
+
+.table-cell {
+    -fx-alignment: CENTER;
+}

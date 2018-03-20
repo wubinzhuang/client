@@ -1,0 +1,11 @@
+com\fxclient\autoupdate\utils\UpdateSettings.class
+com\fxclient\autoupdate\app\MainApp.class
+com\fxclient\autoupdate\pages\AutoupdatePage$1.class
+com\fxclient\autoupdate\utils\ZipUtil.class
+com\fxclient\autoupdate\utils\AppSettings.class
+com\fxclient\autoupdate\http\ProgressResponseBody$1.class
+com\fxclient\autoupdate\http\ProgressResponseBody$ProgressListener.class
+com\fxclient\autoupdate\pages\AutoupdatePage$2.class
+com\fxclient\autoupdate\http\ProgressResponseBody.class
+com\fxclient\autoupdate\utils\RunCmd.class
+com\fxclient\autoupdate\pages\AutoupdatePage.class

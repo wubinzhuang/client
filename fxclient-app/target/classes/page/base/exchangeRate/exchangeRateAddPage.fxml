@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxclient.base.exchangerate.ExchangeRateAddPage">
+    <children>
+        <Label layoutX="39.0" layoutY="43.0" text="源币种:" />
+        <ComboBox fx:id="currencySourceList" layoutX="93.0" layoutY="39.0" prefWidth="150.0" />
+        <TextField fx:id="currencySources" layoutX="93.0" layoutY="14.0" opacity="1.0" prefWidth="150.0" />
+        <Label layoutX="266.0" layoutY="43.0" text="目标币种:" />
+        <ComboBox fx:id="currencyTargetList" layoutX="326.0" layoutY="39.0" prefWidth="150.0" />
+        <TextField fx:id="currencyTargets" layoutX="326.0" layoutY="14.0" opacity="1.0" prefWidth="150.0" />
+        <Label layoutX="39.0" layoutY="85.0" text="汇率日期:" />
+        <TextField fx:id="exchangDate" layoutX="93.0" layoutY="81.0" prefWidth="150.0" />
+        <Label layoutX="266.0" layoutY="85.0" text="最小单位:" />
+        <TextField fx:id="unitAmount" layoutX="326.0" layoutY="81.0" prefWidth="150.0" />
+
+        <Label layoutX="39.0" layoutY="128.0" text="买入价:" />
+        <TextField fx:id="buyPrice" layoutX="93.0" layoutY="122.0" prefWidth="150.0" />
+        <Label layoutX="266.0" layoutY="128.0" text="  卖出价:" />
+        <TextField fx:id="sellPrice" layoutX="326.0" layoutY="122.0" prefWidth="150.0" />
+
+        <Label layoutX="39.0" layoutY="171.0" text="中间价:" />
+        <TextField fx:id="midPrice" layoutX="93.0" layoutY="164.0" prefWidth="150.0" />
+        <TextField fx:id="txtId" layoutX="84.0" layoutY="140.0" visible="false" />
+        <Button layoutX="369.0" layoutY="200.0" mnemonicParsing="false" onAction="#saveExchangeRate" prefHeight="23.0" prefWidth="89.0" text="保存" />
+    </children>
+
+
+
+</AnchorPane>
+

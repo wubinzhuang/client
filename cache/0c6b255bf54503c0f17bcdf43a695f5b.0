@@ -1,0 +1,10 @@
+http://localhost:8080/fxclient/version/checkVersion.do?r=1513578925991&curVersion=1
+GET
+0
+HTTP/1.1 200 
+5
+Content-Type: text/html;charset=UTF-8
+Content-Length: 168
+Date: Mon, 18 Dec 2017 06:35:26 GMT
+OkHttp-Sent-Millis: 1513578926213
+OkHttp-Received-Millis: 1513578926228

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+
+    <dubbo:consumer check="false"/>
+
+    <!-- 系统管理服务 -->
+    <!-- 机构管理 -->
+    <dubbo:reference id="organizationService" interface="com.uams.rpc.system.service.OrganizationService" mock="return null" version="1.0.0"/>
+    <!-- 资源管理 -->
+    <dubbo:reference id="resourcesService" interface="com.uams.rpc.system.service.ResourcesService" mock="return null" version="1.0.0"/>
+    <!-- 角色管理 -->
+    <dubbo:reference id="roleInfoService" interface="com.uams.rpc.system.service.RoleInfoService" mock="return null" version="1.0.0"/>
+    <!-- 用户管理 -->
+    <dubbo:reference id="userInfoService" interface="com.uams.rpc.system.service.UserInfoService" mock="return null" version="1.0.0"/>
+    <!-- 数据权限 -->
+    <dubbo:reference id="userDataService" interface="com.uams.rpc.system.service.UserDataService" mock="return null" version="1.0.0"/>
+    <!-- 系统参数配置 -->
+    <dubbo:reference id="sysParameterService" interface="com.uams.rpc.system.service.SysParameterService" mock="return null" version="1.0.0"/>
+
+    <!-- 全局公共服务 -->
+    <!-- 数据字典 -->
+    <dubbo:reference id="dictionaryService" interface="com.uams.rpc.common.service.DictionaryService" mock="return null" version="1.0.0"/>
+    <!-- 区域代码 -->
+    <dubbo:reference id="regionService" interface="com.uams.rpc.common.service.RegionService" mock="return null" version="1.0.0"/>
+    <!-- 手机短信 -->
+    <dubbo:reference id="msgRecordService" interface="com.uams.rpc.common.service.MsgRecordService" mock="return null" version="1.0.0"/>
+    <!-- 短信模版 -->
+    <dubbo:reference id="msgTemplateService" interface="com.uams.rpc.common.service.MsgTemplateService" mock="return null" version="1.0.0"/>
+
+    <!--base-->
+    <!-- 交易市场信息表-->
+    <dubbo:reference id="marketInfoService" interface="com.uams.rpc.base.service.MarketInfoService" mock="return null" version="1.0.0"/>
+    <!--汇率表-->
+    <dubbo:reference id="exchangeRateService" interface="com.uams.rpc.base.service.ExchangeRateService" mock="return null" version="1.0.0"/>
+    <!--期货品种表-->
+    <dubbo:reference id="futureKindService" interface="com.uams.rpc.base.service.FutureKindService" mock="return null" version="1.0.0"/>
+    <!--市场交易日表-->
+    <dubbo:reference id="marketTradeDayService" interface="com.uams.rpc.base.service.MarketTradeDayService" mock="return null" version="1.0.0"/>
+    <!--期货信息表-->
+    <dubbo:reference id="futureInfoService" interface="com.uams.rpc.base.service.FutureInfoService" mock="return null" version="1.0.0"/>
+    <!--证券信息表-->
+    <dubbo:reference id="stockInfoService" interface="com.uams.rpc.base.service.StockInfoService" mock="return null" version="1.0.0"/>
+    <!--券商期货公司信息表-->
+    <dubbo:reference id="brokerInfoService" interface="com.uams.rpc.base.service.BrokerInfoService" mock="return null" version="1.0.0"/>
+    <!--期货保证金比例设置表-->
+    <dubbo:reference id="futureMarginRatioService" interface="com.uams.rpc.base.service.FutureMarginRatioService" mock="return null" version="1.0.0"/>
+    <!--代理公司在期货公司开设的交易帐号信息等设置表(证券股东信息表)-->
+    <dubbo:reference id="stockHolderService" interface="com.uams.rpc.base.service.StockHolderService" mock="return null" version="1.0.0"/>
+    <!--各分支机构期货交易所走期货公司通道配置表-->
+    <dubbo:reference id="orgTradeChannelCfgService" interface="com.uams.rpc.base.service.OrgTradeChannelCfgService" mock="return null" version="1.0.0"/>
+    <!--各分支机构可交易各大交易所期货品种配置表-->
+    <dubbo:reference id="orgTradeStockKindCfgService" interface="com.uams.rpc.base.service.OrgTradeStockKindCfgService" mock="return null" version="1.0.0"/>
+    <!--各分支机构品种交易费率配置表-->
+    <dubbo:reference id="orgTradeFeeCfgService" interface="com.uams.rpc.base.service.OrgTradeFeeCfgService" mock="return null" version="1.0.0"/>
+
+    <!--account-->
+    <!-- 账户表-->
+    <dubbo:reference id="accountService" interface="com.uams.rpc.account.service.AccountService" mock="return null" version="1.0.0"/>
+    <!-- 账户银行表-->
+    <dubbo:reference id="accountBankService" interface="com.uams.rpc.account.service.AccountBankService" mock="return null" version="1.0.0"/>
+
+    <!-- fund -->
+    <!-- accountAsset-->
+    <dubbo:reference id="accountAssetService" interface="com.uams.rpc.fund.service.AccountAssetService" mock="return null" version="1.0.0"/>
+    <!-- 账户资金调整记录表-->
+    <dubbo:reference id="accountFundAdjustService" interface="com.uams.rpc.fund.service.AccountFundAdjustService" mock="return null" version="1.0.0"/>
+    <!-- 账户资金表-->
+    <dubbo:reference id="accountFundService" interface="com.uams.rpc.fund.service.AccountFundService" mock="return null" version="1.0.0"/>
+    <!-- 账户资产流水表-->
+    <dubbo:reference id="accountFundCurrentService" interface="com.uams.rpc.fund.service.AccountFundCurrentService" mock="return null" version="1.0.0"/>
+
+</beans>

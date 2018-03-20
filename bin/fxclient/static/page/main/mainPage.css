@@ -1,0 +1,88 @@
+.root {
+    -fx-font-family: "΢���ź�";
+}
+
+.text {
+    -fx-font-family: "΢���ź�";
+    -fx-font-size: 14;
+}
+
+.button {
+    -fx-background-color: #25c4c7;
+    -fx-background-radius: 0;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.titleBox {
+    -fx-background-color: #5e86b1;
+}
+
+.titleButton {
+    -fx-background-color: transparent;
+    -fx-background-size: 24px;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center center;
+}
+
+.titleButton:hover {
+    -fx-translate-x: 1px;
+    -fx-translate-y: 1px;
+}
+
+.alert {
+    -fx-background-image: url(../../image/alert.png);
+}
+
+.modifypwd {
+    -fx-background-image: url(../../image/changePwd.png);
+}
+
+.exit {
+    -fx-background-image: url(../../image/exit.png);
+}
+
+.settings {
+    -fx-background-image: url(../../image/settings.png);
+}
+
+.menutree .tree-disclosure-node {
+    visibility: false;
+}
+
+.menutree .tree-disclosure-node {
+    visibility: false;
+}
+
+.navTab .tab-header-background {
+    -fx-background-color: white;
+}
+
+.navTab .tab-header-area .headers-region {
+    -fx-background-color: white;
+}
+
+.navTab .tab-header-area .headers-region .tab {
+    -fx-background-color: #5e86b1;
+    -fx-focus-traversable: false;
+
+}
+
+.navTab .tab-header-area .headers-region .tab .text {
+    -fx-fill: white;
+    -fx-font-size: 16px;
+}
+
+.navTab .tab-header-area .headers-region .tab:selected {
+    -fx-background-color: #5e86b1, white;
+
+}
+
+.navTab .tab-header-area .headers-region .tab:selected .text {
+    -fx-fill: black;
+}
+
+#lock-root {
+    -fx-background-color: #5e86b1, white;
+    -fx-background-insets: 0 0 0 0, 30 10 10 10;
+}

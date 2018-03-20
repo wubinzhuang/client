@@ -1,0 +1,9 @@
+.backgrond {
+    -fx-background-color: #5e86b1;
+}
+
+#lblUpdmsg {
+    -fx-font-family: "΢���ź�";
+    -fx-text-fill: white;
+    -fx-font-size: 14;
+}

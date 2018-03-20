@@ -1,0 +1,39 @@
+.dialog-title {
+    -fx-background-color: #5e86b1;
+}
+
+.title-text {
+    -fx-text-fill: white;
+}
+
+#btnMin {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+
+#btnMin:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+#btnMax {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+
+#btnMax:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+#btnClose {
+    -fx-background-color: transparent;
+    -fx-background-radius: 0;
+}
+
+#btnClose:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+
+#dialogroot {
+    -fx-background-color: #5e86b1, white;
+    -fx-background-insets: 0 0 0 0, 30 10 10 10;
+}

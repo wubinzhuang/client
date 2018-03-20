@@ -1,0 +1,13 @@
+http://localhost:8080/login.html
+GET
+0
+HTTP/1.1 200 
+8
+Accept-Ranges: bytes
+ETag: W/"6606-1519977820910"
+Last-Modified: Fri, 02 Mar 2018 08:03:40 GMT
+Content-Type: text/html
+Content-Length: 6606
+Date: Thu, 15 Mar 2018 08:46:58 GMT
+OkHttp-Sent-Millis: 1521103618817
+OkHttp-Received-Millis: 1521103618839

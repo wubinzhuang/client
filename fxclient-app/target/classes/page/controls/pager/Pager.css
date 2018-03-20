@@ -1,0 +1,31 @@
+.pagination {
+    -fx-background-image: url(../../../image/grid.png) no-repeat;
+    -fx-background-position: 0 -149px;
+
+}
+
+.pagination .text {
+    -fx-font-size: 10;
+}
+
+.pagination .button {
+    -fx-background-color: null;
+    -fx-background-image: url(../../../image/grid.png) no-repeat;
+}
+
+.pagination .first {
+    -fx-background-position: 0 -244px;
+}
+
+.pagination .previous {
+    -fx-background-position: 0 -294px;
+}
+
+.pagination .next {
+    -fx-background-position: 100% -344px;
+}
+
+.pagination .last {
+    -fx-background-position: 100% -394px;
+}
+

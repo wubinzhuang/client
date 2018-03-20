@@ -1,0 +1,11 @@
+http://localhost:8080/admin/login;JSESSIONID=f38f917f7ecb42ac8965110e74af1b39
+GET
+0
+HTTP/1.1 200 
+6
+Content-Type: text/html;charset=UTF-8
+Content-Language: zh-CN
+Content-Length: 6186
+Date: Wed, 31 Jan 2018 08:41:35 GMT
+OkHttp-Sent-Millis: 1517388095195
+OkHttp-Received-Millis: 1517388095698

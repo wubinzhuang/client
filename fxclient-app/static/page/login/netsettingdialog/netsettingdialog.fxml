@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<AnchorPane prefHeight="160.0" prefWidth="320.0" stylesheets="@netsettingdialog.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxclient.app.page.NetSettingDialogPage">
+    <children>
+        <Label layoutX="45.0" layoutY="34.0" text="服务器IP"/>
+        <TextField fx:id="txtIp" layoutX="116.0" layoutY="30.0" prefHeight="23.0" prefWidth="149.0"/>
+        <TextField fx:id="txtPort" layoutX="116.0" layoutY="63.0" prefHeight="23.0" prefWidth="149.0"/>
+        <Label layoutX="45.0" layoutY="67.0" text="端口号"/>
+        <Button fx:id="btnconfirm" layoutX="218.0" layoutY="108.0" mnemonicParsing="false" onAction="#saveNetSetting"
+                prefHeight="23.0" prefWidth="47.0" text="确定"/>
+    </children>
+</AnchorPane>

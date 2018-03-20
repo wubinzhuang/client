@@ -1,0 +1,10 @@
+http://localhost:8080/fxclient/marketInfoManager/export.do
+GET
+0
+HTTP/1.1 200 
+5
+Content-Type: text/html;charset=UTF-8
+Content-Length: 657
+Date: Wed, 20 Dec 2017 03:16:21 GMT
+OkHttp-Sent-Millis: 1513739781432
+OkHttp-Received-Millis: 1513739781457

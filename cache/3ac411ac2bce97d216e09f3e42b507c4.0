@@ -1,0 +1,10 @@
+http://localhost:8080/fxclient/futureKindManager/export.do?kindCode=&kindName=&marketId=35535872233312256
+GET
+0
+HTTP/1.1 200 
+5
+Content-Type: text/html;charset=UTF-8
+Content-Length: 2
+Date: Wed, 20 Dec 2017 03:16:02 GMT
+OkHttp-Sent-Millis: 1513739762615
+OkHttp-Received-Millis: 1513739762646

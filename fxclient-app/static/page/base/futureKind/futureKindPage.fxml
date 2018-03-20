@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.fxclient.framework.controls.tableview.TablePager?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane prefHeight="600.0" prefWidth="800.0" stylesheets="@futureKind.css" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxclient.base.futurekind.FutureKindPage">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+            <children>
+                <ToolBar prefHeight="40.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <items>
+                        <Button mnemonicParsing="false" onAction="#query" text="查询" />
+                        <Button mnemonicParsing="false" onAction="#add" text="新增" />
+                        <Button mnemonicParsing="false" onAction="#modify" text="修改" />
+                        <Button mnemonicParsing="false" onAction="#delete" text="删除" />
+                        <Button mnemonicParsing="false" onAction="#active" text="导出"/>
+                        <TextField fx:id="marketId" opacity="0.18" />
+                    </items>
+                </ToolBar>
+                <GridPane layoutX="28.0" layoutY="47.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="47.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.5" />
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="13" />
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="20" />
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="13" />
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="20" />
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="13" />
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="20" />
+                        <ColumnConstraints hgrow="SOMETIMES" percentWidth="0.5" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="交易市场:" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
+                        <Label text="期货品种名称:" GridPane.columnIndex="5" GridPane.halignment="RIGHT" />
+                        <Label text="期货品种编码:" GridPane.columnIndex="3" GridPane.halignment="RIGHT" />
+                        <ChoiceBox fx:id="marketNameList" prefWidth="150.0" GridPane.columnIndex="2" />
+                        <TextField fx:id="kindCode" GridPane.columnIndex="4" />
+                        <TextField fx:id="kindName" GridPane.columnIndex="6" />
+                    </children>
+                </GridPane>
+                <TableView fx:id="tvwUserInfo" layoutX="8.0" layoutY="155.0" prefHeight="200.0" prefWidth="297.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="100.0">
+                    <columns>
+                        <TableColumn prefWidth="132.0" text="交易市场">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="marketName"  />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="138.0" text="期货品种编码">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="kindCode" />
+                            </cellValueFactory>
+                        </TableColumn>
+                        <TableColumn prefWidth="182.0" text="期货品种名称">
+                            <cellValueFactory>
+                                <PropertyValueFactory property="kindName" />
+                            </cellValueFactory>
+                        </TableColumn>
+                    </columns>
+                </TableView>
+                <TablePager fx:id="pageFutureKindInfo" layoutX="8.0" layoutY="155.0" prefHeight="200.0" prefWidth="297.0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                </TablePager>
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Ellipse?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<AnchorPane prefHeight="600.0" prefWidth="700.0" stylesheets="@login.css" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.fxclient.app.page.LoginPage">
+    <children>
+        <AnchorPane id="login-bg" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+                    prefHeight="300.0" prefWidth="700.0" styleClass="login-bg">
+            <children>
+                <ImageView fx:id="imgSystemLogo" fitHeight="150.0" fitWidth="200.0" layoutX="86.0" layoutY="95.0"
+                           pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../image/logo.png"/>
+                    </image>
+                </ImageView>
+                <CheckBox fx:id="cbxRemember" layoutX="416.0" layoutY="246.0" mnemonicParsing="false" prefHeight="30.0"
+                          prefWidth="107.0" styleClass="remenberme" text="%loginStage.RememberMe"/>
+                <Button fx:id="btnLogin" alignment="CENTER" defaultButton="true" layoutX="537.0" layoutY="243.0"
+                        mnemonicParsing="false" onAction="#doLogin" prefHeight="37.0" prefWidth="117.0"
+                        text="%loginStage.login"/>
+                <Ellipse fill="WHITE" layoutX="531.0" layoutY="96.0" radiusX="143.0" radiusY="1.0" stroke="WHITE"
+                         strokeType="INSIDE"/>
+                <Text fx:id="lblSystemName" fill="WHITE" layoutX="347.0" layoutY="47.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" text="%loginStage.SystemName" textAlignment="CENTER"
+                      wrappingWidth="352.61328125">
+                    <font>
+                        <Font name="Microsoft YaHei Bold" size="34.0"/>
+                    </font>
+                </Text>
+                <TextField fx:id="txtUsername" layoutX="458.0" layoutY="113.0" prefHeight="37.0" prefWidth="193.0"
+                           styleClass="noboder"/>
+                <PasswordField fx:id="txtPassword" layoutX="458.0" layoutY="177.0" prefHeight="37.0" prefWidth="193.0"
+                               styleClass="noboder"/>
+                <Hyperlink fx:id="hlNetSet" layoutX="14.0" layoutY="252.0" onAction="#setNet"
+                           text="%loginStage.netSetting" textFill="WHITE">
+                    <font>
+                        <Font size="16.0"/>
+                    </font>
+                </Hyperlink>
+            </children>
+        </AnchorPane>
+        <ToolBar layoutY="300.0" prefHeight="40.0" prefWidth="700.0">
+            <items>
+                <Button mnemonicParsing="false" onAction="#add" text="%loginStage.add"/>
+                <Button mnemonicParsing="false" onAction="#del" text="%loginStage.del"/>
+                <Button mnemonicParsing="false" onAction="#modify" text="%loginStage.modify"/>
+            </items>
+        </ToolBar>
+        <TableView fx:id="tvwNetSettings" layoutY="339.0" prefHeight="258.0" prefWidth="700.0">
+            <columns>
+                <TableColumn fx:id="selected" prefWidth="75.0" text="%loginStage.select"/>
+                <TableColumn fx:id="ip" prefWidth="250" text="%loginStage.ip"/>
+                <TableColumn fx:id="port" prefWidth="100" text="%loginStage.port"/>
+                <TableColumn fx:id="colTest" prefWidth="200" text="%network.status"/>
+            </columns>
+        </TableView>
+    </children>
+</AnchorPane>

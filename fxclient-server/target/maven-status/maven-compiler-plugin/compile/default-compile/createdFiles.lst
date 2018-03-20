@@ -1,0 +1,6 @@
+com\uams\webapp\demo\models\Version.class
+com\uams\webapp\demo\services\VersionService.class
+com\uams\webapp\demo\models\UserInfo.class
+com\uams\webapp\demo\services\UserManagerService.class
+com\uams\webapp\demo\services\LoginService.class
+com\uams\webapp\demo\models\PageData.class
