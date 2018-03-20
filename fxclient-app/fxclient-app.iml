@@ -15,7 +15,7 @@
       <sourceFolder url="file://$MODULE_DIR$/static" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+    <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: com.uams:uams-fastjson:1.0.1-RELEASE" level="project" />
     <orderEntry type="library" name="Maven: io.javaslang:javaslang:2.0.6" level="project" />

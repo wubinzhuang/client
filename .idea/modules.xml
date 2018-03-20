@@ -3,6 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/client.iml" filepath="$PROJECT_DIR$/.idea/client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxclient-app/fxclient-app.iml" filepath="$PROJECT_DIR$/fxclient-app/fxclient-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxclient-autoupdate/fxclient-autoupdate.iml" filepath="$PROJECT_DIR$/fxclient-autoupdate/fxclient-autoupdate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxclient-framework/fxclient-framework.iml" filepath="$PROJECT_DIR$/fxclient-framework/fxclient-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fxclient-server/fxclient-server.iml" filepath="$PROJECT_DIR$/fxclient-server/fxclient-server.iml" />
     </modules>
   </component>
 </project>
